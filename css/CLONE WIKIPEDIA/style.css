@@ -1,0 +1,465 @@
+/* GENERAL */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border-bottom: 1px solid #c8ccd1; opacity: 35%;
+    width: 90%;
+    margin: auto;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h6 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+body {
+    margin-top: 75px;
+    width: 100vw;
+}
+
+body section {
+    margin-bottom: 15px;
+}
+
+/* Header Title */
+.headtitle {
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.headtitle div {
+    text-align: center;
+}
+
+.headtitle .headtitle-cont{
+    margin-bottom: 5px;
+}
+
+/* Languages section & WikiLogo */
+
+.languages{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Wikipedia-logo-transparent.png/263px-Wikipedia-logo-transparent.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px 200px;
+}
+
+.languages {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.languages .leftLang li {
+    justify-content: flex-end;
+}
+
+.languages .rightLang li {
+    justify-content: flex-start;
+}
+
+.languages li{
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+}
+
+
+.languages li span{
+    display: block;
+    font-size: 1.3rem;
+    color: #54595d;
+    text-decoration: none;
+}
+
+.languages li a{
+    color: #3366cc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.languages button {
+    width: 156px;
+    height: 45px;
+    background-color: white;
+    border: none;
+    justify-self: center;
+}
+
+.languages button:hover{
+    background-color: #eaecf0;
+    cursor: pointer;
+}
+
+.languages button:hover a {
+    text-decoration: underline;
+}
+
+.languages .leftButton1 {
+    margin-right: 60px;
+}
+
+.languages .leftButton2 {
+    margin-right: 100px;
+}
+
+.languages .leftButton3 {
+    margin-right: 120px;
+}
+
+.languages .rightButton1 {
+    margin-left: 60px;
+}
+
+.languages .rightButton2 {
+    margin-left: 100px;
+}
+
+.languages .rightButton3 {
+    margin-left: 120px;
+}
+
+/* Search Bar */
+
+body .search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    height: 45px;
+}
+
+body .search-bar .search-bar-box {
+    border: 1px solid #a2a9b1;
+    width: 400px;
+    display: flex;
+}
+body .search-bar .search-input input{
+    height: 100%;
+    border: none;
+    width: 280px;
+    margin-left: 10px;
+    outline: none;
+}
+
+body .search-bar .search-select select{
+    height: 100%;
+    border: none;
+    width: 50px;
+}
+
+body .search-bar .search-button button{
+    width: 60px;
+    height: 100%;
+    background-color: #3366cc;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .search-bar .search-button button:hover {
+    cursor: pointer;
+}
+
+body .search-bar .search-button button .search-icon {
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-position: 0 -697px;
+    width: 22px;
+    height: 22px; 
+}
+
+/* Choose Language section */
+body .search-bar button:hover{
+    background-color: #447ff5;
+}
+
+body .chooselang {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+body .chooselang button {
+    display: flex;
+    width: 270px;
+    height: 35px;
+    background-color: white;
+    color: #3366cc;
+}
+
+body .chooselang button:hover{
+    cursor: pointer;
+}
+
+body .chooselang .transicon {
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -617px;
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+body .chooselang .dropdown {
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -527px;
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+body .chooselang p{
+    width: 180px;
+    margin-top: 7px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* Wiki inf */
+
+/* left */
+
+.wiki-inf {
+    display: flex;
+    margin-top: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wiki-inf p {
+    font-size: 1.4rem;
+}
+
+.wiki-inf .history, .wiki-inf .moreinfo{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.wiki-inf .history p , .wiki-inf .moreinfo .moreinfo-text{
+    width: 230px;
+}
+
+/* LEFT */
+
+.wiki-inf .wiki-inf-left {
+    width: 35%;
+    padding-left: 20px;
+}
+
+
+.wiki-inf .wikimedia {
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -212px;
+    width: 45px;
+    height: 42px;
+    margin-right: 10px;
+}
+
+.wiki-inf .wikicon {
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -719px;
+    width: 45px;
+    height: 42px;
+    margin-right: 10px;
+}
+
+.wiki-inf .moreinfo p{
+    margin-bottom: 5px;
+}
+
+.wiki-inf button {
+    align-content: center;
+    border:none;
+}
+
+.wiki-inf button:hover {
+    cursor: pointer;
+}
+
+.ggplay {
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -541px;
+    width: 124px;
+    height: 38px;
+    margin-right: 10px;
+}
+
+.appstore {
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -579px;
+    width: 110px;
+    height: 38px;
+    margin-right: 10px;
+}
+
+/* Right */
+
+.wiki-inf .wikilinks {
+    width: 60%;
+    padding-left: 20px;
+    display: block;
+    box-sizing: content-box;
+}
+
+.wiki-inf .wikilinks .wikibutton {
+    width: 33%;
+    float: left;
+}
+
+.wiki-inf .wikilinks button {
+    width: 100%;
+    height: 95px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    padding: 5px;
+}
+
+.wiki-inf .wikilinks .linktext{
+    text-align: left;
+    position: relative;
+    width: 70%;
+    color: #54595d;
+    font-size: 1.2rem;
+    margin-left: auto;
+}
+
+.wiki-inf .wikilinks .linktext h5{
+    color: #3366cc;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.wikilinks .wikibutton .common{
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 47px;
+    height: 47px;
+}
+
+.wikilinks .wikibutton .wikiviajes{
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -446px;
+    width: 36px;
+    height: 36px;
+}
+.wikilinks .wikibutton .wikcionario{
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -482px;
+    width: 37px;
+    height: 37px;
+}
+.wikilinks .wikibutton .wikilibros{
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -126px;
+    width: 37px;
+    height: 37px;
+}
+.wikilinks .wikibutton .wikinoticias{
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikinews-logo_sister.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 47px;
+    height: 26px;
+}
+.wikilinks .wikibutton .wikidata{
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -163px;
+    width: 49px;
+    height: 49px;
+}
+.wikilinks .wikibutton .wikiversidad{
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -409px;
+    width: 43px;
+    height: 37px;
+}
+.wikilinks .wikibutton .wikiquote{
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -286px;
+    width: 42px;
+    height: 42px;
+}
+.wikilinks .wikibutton .mediawiki{
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -47px;
+    width: 42px;
+    height: 42px;
+}
+.wikilinks .wikibutton .wikisource{
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -328px;
+    width: 39px;
+    height: 39px;
+}
+.wikilinks .wikibutton .wikispecies{
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -367px;
+    width: 42px;
+    height: 42px;
+}
+.wikilinks .wikibutton .meta-wiki{
+    background-image: url('https://www.wikipedia.org/portal/wikipedia.org/assets/img/sprite-d7502d35.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -89px;
+    width: 37px;
+    height: 37px;
+}
+
+/* WIKI END*/
+
+.wikiend {
+    font-size: 1.4rem;
+    display: flex;
+    margin-left: 50px;
+    color: #54595d;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.wikiend ul{
+    display: flex;
+    margin-left: 25px;
+}
+
+.wikiend ul li a {
+    color: #3366cc;
+    margin-right: 25px;
+}
